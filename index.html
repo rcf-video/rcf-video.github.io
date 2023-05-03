@@ -1,0 +1,149 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Segmenting objects in videos without human annotations: Bootstrapping Objectness from Videos by Relaxed
+        Common Fate and Visual Grouping (CVPR 2023)</title>
+
+    <meta
+        content="[CVPR 2023] Segmenting objects in videos without human annotations: Bootstrapping Objectness from Videos by Relaxed Common Fate and Visual Grouping"
+        name="description" />
+    <meta content="Bootstrapping Objectness from Videos by Relaxed Common Fate and Visual Grouping" property="og:title" />
+    <meta
+        content="[CVPR 2023] Segmenting objects in videos without human annotations: Bootstrapping Objectness from Videos by Relaxed Common Fate and Visual Grouping"
+        property="og:description" />
+    <meta content="https://rcf-video.github.io/fig_heading.png"
+        property="og:image" />
+    <meta content="Bootstrapping Objectness from Videos by Relaxed Common Fate and Visual Grouping" property="twitter:title" />
+    <meta
+        content="[CVPR 2023] Segmenting objects in videos without human annotations: Bootstrapping Objectness from Videos by Relaxed Common Fate and Visual Grouping"
+        property="twitter:description" />
+    <meta content="https://rcf-video.github.io/fig_heading.png"
+        property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="title-row">
+                <h1 class="title">Bootstrapping Objectness from Videos by Relaxed
+                    Common Fate and Visual Grouping</h1>
+                <h1 class="subheader"> 😲 Segmenting objects in videos without human annotations 🤯 </h1>
+            </div>
+            <div class="base-row author-row">
+                <div class="base-col author-col">
+                    <a href="https://tonylian.com" target="_blank" class="author-text">
+                        Long Lian
+                    </a>
+                </div>
+                <div class="base-col author-col">
+                    <a href="https://scholar.google.com/citations?user=lH4zgcIAAAAJ&hl=en" target="_blank" class="author-text">
+                        Zhirong Wu
+                    </a>
+                </div>
+                <div class="base-col author-col">
+                    <a href="https://web.eecs.umich.edu/~stellayu/" target="_blank" class="author-text">
+                        Stella X. Yu
+                    </a>
+                </div>
+            </div>
+            <div class="base-row author-row">
+                <div class="base-col author-col">
+                    UC Berkeley
+                </div>
+                <div class="base-col author-col">
+                    Microsoft Research Asia
+                </div>
+                <div class="base-col author-col">
+                    UC Berkeley/UMich
+                </div>
+            </div>
+            <div class="link-labels base-row">
+                <div class="base-col icon-col"><a href="https://arxiv.org/abs/2304.08025" target="_blank"
+                        class="link-block">
+                    <i class="fa fas fa-book main-icon" style="font-size: 75px"></i>
+                    </a></div>
+                <div class="base-col icon-col"><a href="https://github.com/TonyLianLong/RCF-UnsupVideoSeg" class="link-block">
+                    <i class="fa fa-brands fa-github main-icon" style="font-size: 80px"></i>
+                    </a></div>
+                <div class="base-col icon-col"><a href="https://github.com/TonyLianLong/RCF-UnsupVideoSeg#citation" class="link-block">
+                    <i class="fa fa-graduation-cap main-icon" style="font-size: 75px"></i>
+                    </a></div>
+            </div>
+            <div class="link-labels base-row">
+                <div class="base-col icon-col">
+                    <strong class="link-labels-text">Paper</strong>
+                </div>
+                <div class="base-col icon-col">
+                    <strong class="link-labels-text">Code and Model Weights</strong>
+                </div>
+                <div class="base-col icon-col">
+                    <strong class="link-labels-text">Citation</strong>
+                </div>
+            </div>
+            <h1 class="tldr">
+                <b>TL;DR</b>: Segmenting objects in videos without human annotations by Relaxed Common Fate and Visual Grouping.
+            </h1>
+            <video id="main-video" autobuffer muted autoplay loop controls>
+                <source id="mp4" src="https://people.eecs.berkeley.edu/~longlian/RCF_video.mp4" type="video/mp4">
+            </video>
+
+            <div class="base-row add-top-padding">
+                <h1 id="abstract">Our Task</h1>
+                <p class="paragraph">
+                    We study learning <b>object segmentation from unlabeled videos</b>. No human annotation is used.
+                </p>
+            </div>
+
+            <div class="base-row">
+                <h1 id="abstract">Our Framework RCF</h1>
+                <p class="paragraph">
+                    We learn an image segmenter first in the loop of approximating optical flow with constant segment flow plus small within-segment residual flow, and then by refining it for more coherent appearance and statistical figure-ground relevance.
+                </p>
+                <div class="base-row add-top-padding">
+                    <img class="img" src="fig_heading.png" />
+                </div>
+            </div>
+
+            <div class="base-row">
+                <h1 id="abstract">RCF's Performance</h1>
+                <p class="paragraph">
+                    On unsupervised video object segmentation, using only ResNet and convolutional heads, our model surpasses the state-of-the-art by absolute gains of 7/9/5% on DAVIS16 / STv2 / FBMS59 respectively, demonstrating the effectiveness of our ideas.
+                </p>
+                <div class="base-row add-top-padding">
+                    <img class="img" src="results.jpg" />
+                </div>
+            </div>
+
+
+            <div class="citation add-top-padding">
+                <h1>Citation</h1>
+                <p> If you use this work or find it helpful, please consider citing: </p>
+                <pre id="codecell0">
+                    @article{lian2023bootstrapping,
+                        title={Bootstrapping Objectness from Videos by Relaxed Common Fate and Visual Grouping},
+                        author={Lian, Long and Wu, Zhirong and Yu, Stella X},
+                        journal={arXiv preprint arXiv:2304.08025},
+                        year={2023}
+                    }
+                      
+                    @article{lian2022improving,
+                        title={Improving Unsupervised Video Object Segmentation with Motion-Appearance Synergy},
+                        author={Lian, Long and Wu, Zhirong and Yu, Stella X},
+                        journal={arXiv preprint arXiv:2212.08816},
+                        year={2022}
+                    }
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <p class="credit">Credit: The design of this project page references the project pages of <a href="https://www.matthewtancik.com/nerf">NeRF</a>, <a
+            href="https://github.com/DeepMotionEditing/DeepMotionEditing.github.io">DeepMotionEditing</a>, and <a
+            href="https://www.lerf.io/">LERF</a>.</p>
+</body>
