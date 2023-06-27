@@ -88,7 +88,7 @@ body {
 }
 
 .icon-col {
-    width: 33.33333%;
+    width: 25%;
 }
 
 .icon-img {
@@ -169,6 +169,10 @@ body {
 
     .author-row {
         height: 35px;
+    }
+
+    .link-labels {
+        width: 100% !important;
     }
 } 
 
